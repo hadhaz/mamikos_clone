@@ -11,7 +11,7 @@ const Hero = () => {
         </desc>
         <Search />
       </header>
-      <div className='absolute hidden sm:block top-[105px] md:right-16 right-2 -z-10'>
+      <div className='absolute hidden sm:block top-16 md:top-20 md:right-16 right-2 -z-10'>
         <div className='relative w-[768px] h-56 md:w-[986px] md:h-64'>
           <Image alt='bg-hero' src='/bg_hero.png' fill />
         </div>

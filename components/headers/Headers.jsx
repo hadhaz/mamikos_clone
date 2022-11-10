@@ -6,7 +6,7 @@ const MAMIKOS_LOGO =
 
 const Headers = () => {
   return (
-    <div className="fixed w-full z-50">
+    <div className='fixed w-full z-50 '>
       <TopNavbar />
       <MainNavbar />
     </div>

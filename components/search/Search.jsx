@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Search = () => {
   return (
-    <div className='pl-3 py-1 pr-1 shadow-lg flex justify-center items-center rounded-md'>
+    <div className='bg-white pl-3 py-1 pr-1 shadow-lg flex justify-center items-center rounded-md'>
       <div className='relative w-6 h-6 '>
         <Image alt='search' src='/search.svg' fill />
       </div>
