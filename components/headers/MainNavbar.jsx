@@ -6,10 +6,8 @@ const MainNavbar = () => {
     <>
       <MobileNavbar />
       <DesktopNavbar />
-     
     </>
   );
 };
-
 
 export default MainNavbar;

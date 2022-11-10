@@ -3,18 +3,18 @@ import Image from "next/image";
 const TopNavbar = () => {
   return (
     <div className='hidden md:block bg-whitedark text-gray text-xs font-semibold'>
-      <nav className='flex justify-between py-2'>
-        <ul className='flex pl-4 gap-4'>
-          <li className='flex items-center gap-1'>
+      <nav className='flex justify-between py-[11px]'>
+        <ul className='flex pl-6 gap-4 items-center'>
+          <li className='flex items-end gap-2'>
             <Logo src='/smartphone.png' alt='smartphone' />
             <div>Download App</div>
           </li>
-          <li className='flex items-center gap-1'>
+          <li className='flex items-end gap-2'>
             <Logo src='/calendar.png' alt='calendar' />
-            <div>Download App</div>
+            <div>Booking Kos</div>
           </li>
         </ul>
-        <div className='pr-4 flex items-center gap-1'>
+        <div className='pr-6 flex items-center gap-1'>
           <Logo src='/announcement.png' alt='ads' />
           <p>Promosikan Iklan Anda</p>
         </div>
