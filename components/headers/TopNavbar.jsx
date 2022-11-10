@@ -5,16 +5,16 @@ const TopNavbar = () => {
     <div className='hidden md:block bg-whitedark text-gray text-xs font-semibold'>
       <nav className='flex justify-between py-[11px]'>
         <ul className='flex pl-6 gap-4 items-center'>
-          <li className='flex items-end gap-2'>
+          <li className='flex items-end gap-2 cursor-pointer'>
             <Logo src='/smartphone.png' alt='smartphone' />
             <div>Download App</div>
           </li>
-          <li className='flex items-end gap-2'>
+          <li className='flex items-end gap-2 cursor-pointer'>
             <Logo src='/calendar.png' alt='calendar' />
             <div>Booking Kos</div>
           </li>
         </ul>
-        <div className='pr-6 flex items-center gap-1'>
+        <div className='pr-6 flex items-center gap-1 cursor-pointer'>
           <Logo src='/announcement.png' alt='ads' />
           <p>Promosikan Iklan Anda</p>
         </div>
