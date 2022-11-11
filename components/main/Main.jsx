@@ -9,6 +9,7 @@ import {
   selectedSliderActive,
   deactiveExpand,
 } from "../../store/ui-slice";
+import Promo from "../promo/Promo";
 import Carousel from "./Carousel";
 import Content from "./Content";
 import Hero from "./Hero";
@@ -52,6 +53,7 @@ const Main = () => {
       <Hero />
       <Carousel />
       <Content />
+      <Promo />
     </main>
   );
 };
