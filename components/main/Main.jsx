@@ -5,14 +5,19 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   activateSearch,
   deactiveSearch,
+  selectedExpandActive,
   selectedSliderActive,
+  deactiveExpand,
 } from "../../store/ui-slice";
+import Carousel from "./Carousel";
+import Content from "./Content";
 import Hero from "./Hero";
 
 const Main = () => {
   const [rendered, setRendered] = useState(false);
   const dispatch = useDispatch();
   const isSliderActive = useSelector(selectedSliderActive);
+  const isExpand = useSelector(selectedExpandActive);
 
   const handleScroll = useCallback(() => {
     if (window.scrollY > 180) {
@@ -33,13 +38,20 @@ const Main = () => {
     }
   }, [rendered, handleScroll]);
 
+  const deactiveExpandHandler = () => {
+    dispatch(deactiveExpand());
+  };
+
   return (
     <main
+      onClick={deactiveExpandHandler}
       className={`${
         isSliderActive ? "h-screen" : "h-[2000px]"
-      } relative pt-14 md:pt-[105px]`}
+      } pt-14 md:pt-[105px] w-screen overflow-x-hidden`}
     >
       <Hero />
+      <Carousel />
+      <Content />
     </main>
   );
 };
